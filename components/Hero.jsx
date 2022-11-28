@@ -24,9 +24,9 @@ export const Hero = () => {
       <div className="absolute inset-0 z-10 backdrop-blur-[200px]" />
       <div className="md:-left-[28rem] -left-40 -top-40 md:-top-[28rem] bg-neon-pink absolute opacity-60 dark:opacity-30 rounded-full w-96 h-96 md:w-[48rem] md:h-[48rem]" />
       <div className="md:-right-[28rem] -right-40 -bottom-40 md:-bottom-[28rem] bg-neon-blue absolute opacity-60 dark:opacity-30 rounded-full w-96 h-96 md:w-[48rem] md:h-[48rem]" />
-      <div className="relative z-20 px-12 py-24 mx-auto max-w-7xl items-center justify-center min-h-screen 2xl:min-h-[1000px] h-fit">
+      <div className="md:flex-row md:text-left text-center gap-10 px-10 py-10 flex flex-col relative z-20 px-12 py-24 mx-auto max-w-7xl items-center justify-center min-h-screen 2xl:min-h-[1000px] h-fit">
         <div
-          className="absolute inset-0 translate-y-32 pointer-events-none dark:invert dark:brightness-90"
+          className="flex absolute inset-0 translate-y-32 pointer-events-none dark:invert dark:brightness-90"
           aria-hidden="true"
         >
           <ScatteredSpheres />
@@ -56,12 +56,12 @@ export const Hero = () => {
             visual editor to modify your code.
           </p>
           <div
-            className="flex flex-col"
+            className="flex flex-col m-10"
             data-aos="zoom-y-out"
             data-aos-delay="300"
           >
             <form
-              className="relative flex flex-row items-center"
+              className="md:flex-row relative flex flex-col items-center"
               onSubmit={handleSubmit}
             >
               <input
@@ -82,10 +82,10 @@ export const Hero = () => {
                 Your Email
               </label>
               {/* Line beneath label to hide outline */}
-              <div className="absolute top-0 w-[4.3rem] h-[2px] bg-gray-100 dark:bg-gray-800 left-3" />
+              <div className="p-1000 m-100 absolute top-0 w-[4.3rem] h-[2px] bg-dodgerblue-100 dark:bg-gray-800 left-3" />
               <button
                 type="submit"
-                className="font-bold rounded-lg text-gray-50 hover:bg-primary-700 bg-gray-600 md:px-2"
+                className="ml-10 md:mt-0 mt-5 md:w-auto w-full px-10 gap-20 bg-blue-500 font-bold rounded-lg text-gray-50 hover:bg-primary-700 bg-dodgerblue-600 md:px-2"
               >
                 Waitlist
               </button>
